@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    
+    .layout {
+      text-align:center;
+      border:1px solid red;
+      height:500px;
+      width:400px;
+    }
+    
+    .layout::before {
+      content:'';
+      display:inline-block;
+      height:100%;
+      vertical-align:middle;
+    }
+    
+    .layout>img {
+      vertical-align:middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <img src="http://cdn.jirengu.com/public/logo-tiny.png" alt="">
+  </div>
+</body>
+</html>
