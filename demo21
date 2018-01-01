@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    .active {
+      color : #fff;
+      background : #000;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="box">
+    <h1>hello</h1>
+    <p>jirengu</p>
+  </div>
+  <button id="add">add</button>
+  <button id="remove">remove</button>
+  <button id="toggle1">toggle1</button>
+  <button id="toggle2">toggle1</button>
+  <script>
+    function $(node){
+      return document.querySelector(node);
+    }
+
+    function $$(node){
+      return document.querySelectorAll(node);
+    }
+
+    $("#add").addEventListener("click",function(e){
+      $(".box").classList.add('active');
+    })
+
+    $("#remove").addEventListener("click",function(e){
+  $(".box").classList.remove('active');
+})
+
+$("#toggle1").addEventListener("click",function(e){
+  if($(".box").classList.contains("active")){
+      $(".box").classList.remove('active');
+  }else {
+     $(".box").classList.add('active');
+  }
+})
+
+$("#toggle2").addEventListener("click",function(e){
+  if($(".box").classList.contains("active")){
+      $(".box").classList.remove('active');
+  }else {
+     $(".box").classList.add('active');
+  }
+})
+  </script>
+</body>
+</html>
