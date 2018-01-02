@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    .container {
+      border: 1px solid #000;
+      padding :5px;
+    }
+    
+    .ct {
+      border: 1px solid #000;
+    }
+    
+     .ct-p {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ct">
+      <p class="ct-p">hello</p>
+    </div>
+  </div>
+</body>
+  <script>
+    function $(node){
+  return document.querySelector(node);
+}
+
+$(".container").addEventListener("click",function(){
+  console.log("捕获阶段 container click");
+},true);
+
+$(".ct").addEventListener("click",function(){
+  console.log("捕获阶段 ct click");
+},true);
+
+$(".ct-p").addEventListener("click",function(){
+  console.log("捕获阶段 p click");
+},true);
+
+$(".container").addEventListener("click",function(){
+  console.log("冒泡阶段 container click");
+},false);
+
+$(".ct").addEventListener("click",function(){
+  console.log("冒泡阶段 ct click");
+},false);
+
+$(".ct-p").addEventListener("click",function(){
+  console.log("冒泡阶段 p click");
+},false);
+    
+  </script>
+</html>
