@@ -197,11 +197,17 @@
 			return document.querySelector(node);
 		}
 
-		$(".user").onclick = function(){
+		document.addEventListener("click",function(){
+			$(".flip-modal").style.display = 'none';
+		});
+
+		$("header .user").onclick = function(e){
+			e.stopPropagation();
 			$(".flip-modal").style.display = 'block';
 		}
 
 		$(".flip-modal").addEventListener("click",function(e){
+			e.stopPropagation();
 			if (e.target.classList.contains('close')) {
 				$(".flip-modal").style.display = 'none';
 			}
@@ -214,6 +220,8 @@
 				$(".flip-modal").classList.add('register');
 			}
 		});
+
+
 
 		$(".modal-login form").addEventListener("submit",function(e){
 			e.preventDefault();
@@ -234,6 +242,7 @@
 				$(".modal-register .error").innerText = '用户名需输入3-8个字符，包括字母数字下划线';
 				return false;
 			}
+
 			if(!/^\w{3,8}$/.test($('.modal-register input[type=password]').value)){
 				$(".modal-register .error").innerText = '密码需输入3-8个字符，包括字母数字下划线';
 				return false;
