@@ -3,7 +3,7 @@
 </head>
 <body>
 <script>
-var xhr = XMLHttpRequest();
+var xhr = new XMLHttpRequest();
 xhr.open("GET","/cate.json",true);
 xhr.onload = function(data){
   console.log(data);
