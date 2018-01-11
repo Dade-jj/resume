@@ -1,0 +1,13 @@
+<!doctype html>
+<head>
+</head>
+<body>
+<script>
+var xhr = XMLHttpRequest();
+xhr.open("GET","/cate.json",true);
+xhr.onload = function(data){
+  console.log(data);
+}
+xhr.send();
+</script>
+</body>
