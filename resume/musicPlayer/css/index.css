@@ -1,0 +1,91 @@
+.cover {
+	position: absolute;
+	display: block;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516113214004&di=fbf82fe97bb0c6105532825ba0611943&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3Dd444f1f29816fdfad86cc6e6848d8cea%2F69998582d158ccbf1f2abfe31cd8bc3eb0354118.jpg") center center no-repeat;
+	background-size: cover;
+	filter: blur(5px);
+}
+
+
+
+.music-pannel {
+	padding: 10px;
+
+}
+
+.container {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 400px;
+	border: 1px solid #fff;
+	transform: translate(-50%,-50%);
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 1px 3px 7px #000;
+	border-radius: 2px;
+}
+
+.container .info {
+	margin-left: 163px;
+	margin-top: 18px;
+	font-family: cursive;
+}
+
+.info .songName{
+	font-size: 22px;
+}
+
+.info .author{
+	padding-left: 4px;
+	font-size: 16px;
+}
+
+.container .control{
+	position: absolute;
+	top: 60px;
+	left: 20px;
+}
+
+.container .control i{
+	font-size: 30px;
+	cursor: pointer;
+	margin-right: 15px; 
+}
+
+.progress .bar{
+	background-color: #ccc;
+	width: 290px;
+	height: 4px;
+	margin-top: 28px; 
+	margin-left: 10px; 
+	cursor: pointer;
+}
+
+.progress .progress-now{
+	background-color: #ee8a87;
+	width: 0;
+	height: 4px;
+}
+
+.progress .time {
+	font-size: 20px;
+	margin-left: 260px;
+}
+
+.music-list li{
+	border: 1px solid #fff;
+	padding: 10px 248px 10px 0;
+	border-top-color: #9e9e9e;
+	cursor: pointer;
+}
+
+.music-list li:hover{
+	background-color: #ccc;
+}
+
+.active {
+	background-color: #ccc;
+}

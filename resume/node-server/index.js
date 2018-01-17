@@ -23,7 +23,8 @@ var routes = {
 	'/getWeather': function(req,res){
 		var pathObj = url.parse(req.url,true);
 		res.end(JSON.stringify(pathObj.query));
-	}
+	},
+
 }
 
 function routePath(req,res){
@@ -71,3 +72,18 @@ var server = http.createServer(function(req,res){
 	routePath(req,res);
 });
 server.listen(8000);
+
+
+
+
+function getMusicList(callback){	
+	var xhr = new XMLHttpRequest();
+	xhr.open('get','music.json',true);
+	xhr.onload = function(){
+		console.log(55);
+		if((xhr.status >= 200 || xhr.status < 300)||xhr.status == 304){
+			callback(JSON.parse(xhr.responseText()));
+		}		
+	}
+	xhr.send();
+}
