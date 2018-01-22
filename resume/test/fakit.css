@@ -1,0 +1,21 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.pause {
+	margin: 16px;
+	border-top: 12px solid #fff;
+	border-left: 12px solid red;
+	border-bottom: 12px solid #fff;
+}
+
+.play {
+	margin: 16px;
+	margin-left: 12px;
+	height: 20px;
+	width: 5px;
+	content: '';
+	border-right: 9px solid red;
+	border-left: 9px solid red;
+}

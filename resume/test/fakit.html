@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="fakit.css">
+	<script src="https://cdn.bootcss.com/jquery/1.8.0/jquery-1.8.0.min.js"></script>
+</head>
+<body>
+	<div class="icon pause"></div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".icon").click(function(){
+			$(this).toggleClass("pause").toggleClass("play");
+		});
+	});
+</script>
+</html>
