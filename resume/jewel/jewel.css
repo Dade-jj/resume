@@ -1,0 +1,102 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.container {
+	width: 700px;
+	margin: 0 auto;
+}
+
+.container h2 {
+	margin-top: 9px;
+	margin-left: 25px;
+	font-size: 18px;
+	color: #666;
+}
+
+.container .pannel {
+	margin-left: 18px;
+	margin-bottom: 12px;
+}
+
+.pannel .prod {
+	float: left;
+	position: relative;
+	border: 1px solid rgba(0,0,0,0.1);
+	margin: 10px;
+	padding: 10px 20px;
+}
+
+.prod img {
+	width: 150px;
+	height: 150px;
+}
+
+.prod.hover .cover{
+	opacity: 1;
+}
+
+.cover {
+	background-color: #ccc;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.3);
+	transition: all 0.3s;
+	opacity: 0;
+}
+
+.cover a {
+	border: 1px solid red;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+	color: red;
+	font-size: 10px;
+	background-color: #fff;
+}
+
+.prod .jewel-name {
+	font-size: 10px;
+	color: rgba(0,0,0,0.8);
+}
+
+.prod .jewel-price {
+	margin-top: 10px;
+	font-size: 9px;
+	color: red;
+}
+
+.container .operate {
+	float: left;
+}
+
+.container .add,.container .edit{
+	border: 1px solid red;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 10px;
+	padding: 10px;
+	color: red;
+	border-radius: 5px;
+}
