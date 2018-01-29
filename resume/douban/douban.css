@@ -98,7 +98,6 @@ footer>div>span {
 
 
 #search {
-	width: calc(100% - 40px);
 	padding: 10px;
 }
 
@@ -121,6 +120,10 @@ footer>div>span {
 	border-radius: 2px;
 	margin-left: 5px;
 	color: #fff;
+}
+
+.search-area .button:hover {
+	cursor: pointer;
 }
 
 .loading {
