@@ -1,0 +1,262 @@
+* {
+	padding:  0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ul,li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font: 14px/1.5 serif;
+}
+
+.clearfix:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+html,body,section {
+	height: 100%;
+	overflow: hidden;
+}
+
+main {
+	padding-top: 12vh;
+	height: calc(100% - 24vh);
+}
+
+.layout {
+	position: relative;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+main::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+main .aside > figure {
+	background: url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-middle);
+	background-size: cover;
+	height: 46vh;
+	width: 46vh;
+}
+
+main .aside {
+	float: left;
+}
+
+main .aside .action{
+	display: flex;
+	margin-top: 4vh;
+	text-align: center;
+}
+
+main .aside .iconfont {
+	flex: 1;
+	font-size: 4vh;
+	color: rgba(255,255,255,0.4);
+	transition: color .4s;
+} 
+
+main .aside .iconfont:hover {
+	color: rgba(255,255,255,1);
+	cursor: pointer;
+}
+
+main .detail {
+	margin-left: 56vh;
+	color: #fff;
+}
+
+main .detail .tag {
+	padding: 6px 10px;
+	font-size: 2vh;
+	background-color: #2e6eec;
+}
+
+main .detail h4 {
+	font-size: 4vh;
+	margin-top: 3vh;
+}
+
+main .detail .icons {
+	display: flex; 
+	margin-top: 11vh;
+}
+
+main .icons li {
+	flex: 1;
+	font-size: 3vh;
+}
+
+main .icons .iconfont {
+	font-size: 3vh;
+}
+
+main .detail .area-bar {
+	margin-top: 12vh;
+	color: #fff;
+}
+
+main .detail .author {
+	margin-top: 3vh;
+	color: rgba(255,255,255,0.4);
+}
+
+main .detail .area-bar {
+	display: flex;
+	align-items: center;
+}
+
+main .area-bar .bar {
+	position: relative;
+	flex: 1;
+	height: .8vh;
+	border-radius: .2vh;
+	background-color: rgba(255,255,255,0.4);
+}
+
+main .bar .bar-progress{
+	position: absolute;
+	height: .8vh;
+	background-color: #fff;
+	width: 5%;
+	border-radius: .2vh;
+}
+
+main .area-bar .current-time {
+	width: 3vh;
+	margin-left: 1vh;
+	font-size: 2vh;
+}
+
+footer {
+	height: 24vh;
+	background-color: rgba(255,255,255,0.2);
+	box-shadow: 0 -0.25vh 0.25vh 0.25vh rgba(255,255,255,0.2);
+}
+
+footer > .layout {
+	width: 1100px;
+	margin: 0 auto;
+	padding-top: 1vh;
+	color: rgba(255,255,255,0.5);
+}
+
+footer .box {
+	position: relative;
+	overflow: hidden;
+	height: 24vh; 
+}
+
+footer .iconfont {
+	position: absolute;
+	top: 6vh;
+	font-size: 6vh;
+	transition: all .4s;
+	color: rgba(255,255,255,0.3);
+}
+
+footer .iconfont:hover {
+	cursor: pointer;
+	color: rgba(255,255,255,1);
+}
+
+footer .icon-right {
+	right: -8vh;
+}
+
+footer .icon-left {
+	left: -8vh;
+}
+
+footer ul {
+	position: absolute;
+}
+
+footer ul li{
+	float: left;
+	height: 20vh;
+	width: 20vh;
+	margin-left: 3vh;
+	margin-top: 1vh;
+}
+
+footer ul li:hover {
+	cursor: pointer;
+	box-shadow: 0 0 0.5vh 0.5vh rgba(255,255,255,0.8);
+}	
+
+footer li h4 {
+	text-align: center;
+	margin-top: 1vh;
+}
+
+footer li .cover {
+	height: 16vh;
+}
+
+footer ul li:nth-child(1) .cover{
+	background-image: url(http://cloud.hunger-valley.com/17-10-24/1906806.jpg-small);
+	
+}
+
+footer ul li:nth-child(2) .cover{
+	background-image:url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-small);
+}
+
+footer ul li:nth-child(3) .cover{
+	background-image:url(http://cloud.hunger-valley.com/music/public_tuijian_autumn.jpg-small);
+}
+
+footer ul li:nth-child(4) .cover{
+	background-image:url(http://cloud.hunger-valley.com/music/public_tuijian_ktv.jpg-small);
+}
+
+footer ul li:nth-child(5) .cover{
+	background-image:url(http://cloud.hunger-valley.com/music/public_tuijian_winter.jpg-small);
+}
+
+footer ul li:nth-child(6) .cover{
+	background-image:url(http://cloud.hunger-valley.com/music/public_shiguang_90hou.jpg-small);
+}
+
+footer ul li:nth-child(7) .cover{
+	background-image:url(http://cloud.hunger-valley.com/music/public_shiguang_90hou.jpg-small);
+}
+
+footer ul li:nth-child(8) .cover{
+	background-image:url(http://cloud.hunger-valley.com/music/public_shiguang_90hou.jpg-small);
+}
+
+.bg {
+	position: absolute;
+	background: url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-middle) center center no-repeat;
+	background-size: cover;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+	z-index: -1;
+	filter: blur(4px);
+}
+
+.bg::before {
+	position: absolute;
+	background-color: rgba(0,0,0,0.4);
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
