@@ -94,6 +94,14 @@ main .detail .icons {
 	margin-top: 11vh;
 }
 
+main .detail .bar:hover {
+	cursor: pointer;
+}
+
+main .action .active {
+	color: #ff5722;
+}
+
 main .icons li {
 	flex: 1;
 	font-size: 3vh;
@@ -110,6 +118,11 @@ main .detail .area-bar {
 
 main .detail .author {
 	margin-top: 3vh;
+}
+
+main .detail .lyric {
+	margin-top: 1.5vh;
+	font-size: 1vh;
 	color: rgba(255,255,255,0.4);
 }
 
@@ -130,8 +143,8 @@ main .bar .bar-progress{
 	position: absolute;
 	height: .8vh;
 	background-color: #fff;
-	width: 5%;
 	border-radius: .2vh;
+	transition: width .8s;
 }
 
 main .area-bar .current-time {
@@ -182,6 +195,8 @@ footer .icon-left {
 
 footer ul {
 	position: absolute;
+	overflow: hidden;
+	height: 24vh;
 }
 
 footer ul li{
@@ -190,6 +205,11 @@ footer ul li{
 	width: 20vh;
 	margin-left: 3vh;
 	margin-top: 1vh;
+}
+
+footer ul .active {
+	cursor: pointer;
+	box-shadow: 0 0 0.5vh 0.5vh rgba(255,255,255,0.8);
 }
 
 footer ul li:hover {
@@ -205,7 +225,7 @@ footer li h4 {
 footer li .cover {
 	height: 16vh;
 }
-
+/*
 footer ul li:nth-child(1) .cover{
 	background-image: url(http://cloud.hunger-valley.com/17-10-24/1906806.jpg-small);
 	
@@ -237,7 +257,7 @@ footer ul li:nth-child(7) .cover{
 
 footer ul li:nth-child(8) .cover{
 	background-image:url(http://cloud.hunger-valley.com/music/public_shiguang_90hou.jpg-small);
-}
+}*/
 
 .bg {
 	position: absolute;
